@@ -14,7 +14,7 @@
 6. git commit -m "First Commit"         # 파일을 확정함 -> git log로 결과학인 가능
 7. gir remote add origin 주소
 8. git push -u origin master            # ps. 처음한번만, 이후에는 git push 비밀번호 d -> 
-9. git pull                            # local과 동기화 
+9. git pull                             # local과 동기화 
 
 --------------------
 
