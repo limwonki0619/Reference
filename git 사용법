@@ -14,7 +14,7 @@ cmd 창에서 javac 명령어를 통해 설치가 잘 되었는지 확인한다.
 
 ### Git 설치하기
 
-Git을 설치하기 위해서는 [Git 공식사이트](https://git-scm.com/download/)에서 운영체제에 맞는 버전을 설치해준다.
+Git을 설치하기 위해서는 Git 공식사이트(https://git-scm.com/download/)에서 운영체제에 맞는 버전을 설치해준다.
 
 ### 처음으로 해보는 Git 
 
