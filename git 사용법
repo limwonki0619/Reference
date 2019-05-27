@@ -1,4 +1,4 @@
-### 시작하기 전에
+﻿### 시작하기 전에
 
 Git을 사용하기 전에 Java 설치 및 환경변수 설정이 필요하다. 
 
@@ -43,7 +43,7 @@ Git을 설치하기 위해서는 Git 공식사이트(https://git-scm.com/downloa
 5. Github에서 원하는 원격저장소를 새로 생성한다.  
 6. 로컬 저장소(Local Rpository)와 원격 저장소(Remote Rpository를 연결한다.
    
-   gti remote add origin <Remote Rpos url>        # 새로운 Repo remote 추가
+   git remote add origin <Remote Rpos url>        # 새로운 Repo remote 추가
    (git remote -v)                                # 연결상태를 확인한다.
    
 7. 스테이징된 파일을 깃허브로 푸시한다.
