@@ -1,7 +1,33 @@
-1. jdk 1.8 설치
-2. git 설치 
+## 시작하기 전에
 
-------------------- git 설정방법
+Git을 사용하기 전에 Java 설치 및 환경변수 설정이 필요하다. 
+
+환경변수는 1. JAVA_HOME 설정과 2. path 설정이 필요하다.
+
+JAVA_HOME 설정은 JAVA의 jdk파일이 저장된 경로를 지정해준다. 
+
+path 설정은 편집란에 ;%JAVA_HOMEbin 을 추가해준다.
+
+cmd 창에서 javac 명령어를 통해 설치가 잘 되었는지 확인한다.
+
+## Git 설치하기
+
+Git을 설치하기 위해서는 [Git 공식사이트](https://git-scm.com/download/)에서 운영체제에 맞는 버전을 설치해준다.
+
+## 처음으로 해보는 Git 
+
+1. Git.exe를 받은 후 디폴트값으로 설치를 해준다. (단, console window로 설정을 바꾸는게 있다)
+2. cmd 창에서 다음과 같은 초기 세팅을 해준다
+
+   git --version                                            // git 설치확인
+   git config --global user.name "limwonki0619"             // github에 회원등록
+   git config --global user.email "limwk0619@naver.com"     // 
+   
+3. 프로젝트를 진행할 디렉토리에서 새로운 저장소를 생성한 후 cmd 창에서 다음을 실행한다.
+
+   d:
+   cd \작업디렉토리명
+   git init                             // 
 
 1. d:                                   # D드라이브로 변경
                                         # D드라이브 워크플레이스-TTL 파일 생성 mkdir 파일명
