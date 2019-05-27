@@ -1,4 +1,4 @@
-## 시작하기 전에
+### 시작하기 전에
 
 Git을 사용하기 전에 Java 설치 및 환경변수 설정이 필요하다. 
 
@@ -10,45 +10,55 @@ path 설정은 편집란에 ;%JAVA_HOMEbin 을 추가해준다.
 
 cmd 창에서 javac 명령어를 통해 설치가 잘 되었는지 확인한다.
 
-## Git 설치하기
+### Git 설치하기
 
 Git을 설치하기 위해서는 [Git 공식사이트](https://git-scm.com/download/)에서 운영체제에 맞는 버전을 설치해준다.
 
-## 처음으로 해보는 Git 
+### 처음으로 해보는 Git 
 
 1. Git.exe를 받은 후 디폴트값으로 설치를 해준다. (단, console window로 설정을 바꾸는게 있다)
 2. cmd 창에서 다음과 같은 초기 세팅을 해준다
 
-   git --version                                            // git 설치확인
-   git config --global user.name "limwonki0619"             // github에 회원등록
-   git config --global user.email "limwk0619@naver.com"     // 
+   git --version                                            # git 설치확인
+   git config --global user.name "limwonki0619"             # github에 회원등록
+   git config --global user.email "limwk0619@naver.com"     # github에 메일등록
    
-3. 프로젝트를 진행할 디렉토리에서 새로운 저장소를 생성한 후 cmd 창에서 다음을 실행한다.
+3. 작업디렉토리(Working Directory) 생성과 로컬저장소(Local Repositiory) 지정을 위해 cmd 창에서 다음을 실행한다.
 
    d:
+   (mkdir <name>)                                 # 작업디렉토리 생성
    cd \작업디렉토리명
-   git init                             // 
+   git init                                       # 여기서 init는 (initialize : 초기화)를 뜻하며, 이는 작업디렉토리를 로컬 깃 저장소라고 말해주는 것이다
 
-1. d:                                   # D드라이브로 변경
-                                        # D드라이브 워크플레이스-TTL 파일 생성 mkdir 파일명
+4. 다음을 통해 작업을 마친 파일을 준비상태(Staging Area)로 보낸다. 
 
-2. cd \Workspace\TIL
-3. git init                             # lcoal저장소를 시작으로 새로운 프로젝트롤 시작하는 경우에 사용하며 비어있는 git 저장소가 생성된다.
-                                        # 
-4. Til파일 생성 - 메모장으로 til작성)
-5. git add .                            # 파일을 준비상태로 보내기
-6. git commit -m "First Commit"         # 파일을 확정함 -> git log로 결과학인 가능
-7. gir remote add origin 주소
-8. git push -u origin master            # ps. 처음한번만, 이후에는 git push 비밀번호 d -> 
-9. git pull                             # local과 동기화 
+   git add <파일명.확장자>
+   git add .                                      # 작업디렉토리에 있는 모든 파일을 추가할 수 있다.
+   
+   git commit -m "변경내용"                        # 커밋을 통해 파일을 확정하고, 변경내용 작성 후 스냅샷을 찍는다.
+                                                  # git log로 결과확인이 가능하다
 
---------------------
+5. Github에서 원하는 원격저장소를 새로 생성한다.  
+6. 로컬 저장소(Local Rpository)와 원격 저장소(Remote Rpository를 연결한다.
+   
+   gti remote add origin <Remote Rpos url>        # 새로운 Repo remote 추가
+   (git remote -v)                                # 연결상태를 확인한다.
+   
+7. 스테이징된 파일을 깃허브로 푸시한다.
 
-d:
-mkdir \workspace
-git clone 주소(clone or download) (to local 레파지토리 이름) TIL
+   git push -u origin master                      # 첫 설정떄만 사용하면 된다. 
+   git push origin master
 
-git push
+--------------------------------------------------------------------------------------
+
+++ 자주 사용하는 git 명령어
+    
+   git clone <Repo url>
+   git status                           # git 상태를 확인한다 (
+   git remote remove origin             # 기존 Repo remote를 제거한다. (Repo를 변경할 때 사용하는 것 같다)
+   git diff                             # 수정된 내용을 확인할 수 있다. 
+
+
 
 참고자료 : https://emflant.tistory.com/123 github에 처음 파일 올리기 
           생활코팅 : git 
