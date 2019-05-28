@@ -44,7 +44,7 @@ Git을 설치하기 위해서는 Git 공식사이트(https://git-scm.com/downloa
 6. 로컬 저장소(Local Rpository)와 원격 저장소(Remote Rpository를 연결한다.
    
    git remote add origin <Remote Rpos url>        # 새로운 Repo remote 추가
-   (git remote -v)                                # 연결상태를 확인한다.
+   (git remote -v)                                # local repository에 연결된 remote repository를 확인
    
 7. 스테이징된 파일을 깃허브로 푸시한다.
 
@@ -53,14 +53,35 @@ Git을 설치하기 위해서는 Git 공식사이트(https://git-scm.com/downloa
 
 --------------------------------------------------------------------------------------
 
-++ 자주 사용하는 git 명령어
+### 원격저장소에서 파일 가져오는 방법 
+
+1. zip 파일                             # .git 폴더가 없는채로 소스만 받을 수 있으므로, local에서 git을 새롭게 설정해야된다.
+2. git clone  <remote Repo url>         # .git 폴더까지 포함해서 소스를 받을 수 있다.
+   git clone -b <branch name> <Repo url>
+
+3. git pull                             # remote repository에 저장된 파일을 가져와 local repository의 내용을 갱신한다.
+                                        # 단, 병합(merge) 과정이 발생하며 해당 remote repository에 권한이 있어야 pull 명령이 가능하다.
+                                        # git pull = git fetch + git merge
+                                        
+                                  
+ ref) git pull vs git clone 
+  
+      git clone은 github의 모든 파일을 가져오기만 함
+      git pull은 local repository와 비교하여 병합을 하고, local repository에 저장(git add)까지 수행
+                 또한 주로 협업과정에서 프로젝트의 최신코드를 local로 가져오는 역할로 많이 사용함
+  
+      git fetch는 local에 연결된 remote repository의 브랜치 목록과 그 파일 내용을 최슨으로 업데이트 하는 명령어, 즉 local과 remote의 싱크를 맞추는 새로고침 역할
+      git merge는 두 개의 branch를 병합하는 명령어
+  
+-------------------------------------------------------------------------------------
+
+### 자주 사용하는 git 명령어
     
-   git clone <Repo url>
-   git status                           # git 상태를 확인한다 (
-   git remote remove origin             # 기존 Repo remote를 제거한다. (Repo를 변경할 때 사용하는 것 같다)
-   git diff                             # 수정된 내용을 확인할 수 있다. 
-   git config --list                    # config 관련 
-   git config credential.helper stroe   # 이 옵션을 주게 되면 해당 gir directory에선 반영구적으로 인증 절차가 
+    git status                           # git 상태를 확인한다 (
+    git remote remove origin             # 기존 Repo remote를 제거한다. (Repo를 변경할 때 사용하는 것 같다)
+    git diff                             # 수정된 내용을 확인할 수 있다. 
+    git config --list                    # config 관련 
+    git config credential.helper stroe   # 이 옵션을 주게 되면 해당 gir directory에선 반영구적으로 인증 절차가 
    
 
 
