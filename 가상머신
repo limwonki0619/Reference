@@ -10,4 +10,7 @@
    : vi sample.txt
    : viv
    : cat sample.txt
-   
+   : ls -al
+   : ls /
+   : ls -l /
+   : 
