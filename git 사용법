@@ -81,7 +81,7 @@ Git을 설치하기 위해서는 Git 공식사이트(https://git-scm.com/downloa
     git remote remove origin             # 기존 Repo remote를 제거한다. (Repo를 변경할 때 사용하는 것 같다)
     git diff                             # 수정된 내용을 확인할 수 있다. 
     git config --list                    # config 관련 
-    git config credential.helper stroe   # 이 옵션을 주게 되면 해당 git directory에선 반영구적으로 인증 절차가 
+    git config credential.helper store   # 이 옵션을 주게 되면 해당 git directory에선 반영구적으로 인증 절차가 
    
 
 
