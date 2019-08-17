@@ -1,0 +1,12 @@
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+# fm._rebuild() # <- 코드로 아나콘다에서 인식하지 못한 폰트를 업데이트 해준다.
+
+font_fname = 'C:/Windows/Fonts/NanumGothic.ttf'  # 원하는 폰트 
+font_family = fm.FontProperties(fname=font_fname).get_name()
+plt.rcParams['font.family'] = font_family
+
+%matplotlib inline 
+mpl.rc('axes', unicode_minus=False)        # 마이너스('-') 폰트 깨지는 문제에 대한 대처
