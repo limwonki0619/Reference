@@ -38,12 +38,15 @@ ls
 mv [java~] /usr/local
 loc
 ls
-ln -s [jdk.8~]
+ln -s [jdk.8~] java
 
 vi /etc/profile
-source /etc/profile
 
 export JAVA_HOME=/usr/local/java
 export PAHT=$JAVA_HOME/bin:$PATH
 
+source /etc/profile
+
+ls -lrt 
+java
 
