@@ -1,0 +1,49 @@
+VMware 압축풀기
+VMware-workstation-full-8.0.2-591240.exe 실행
+VM.exe 기본값 설치
+KEY 입력 
+
+
+VMware Workstation 실행 
+Create a new virtual machine
+centos 연결
+
+full name centos
+
+namenode
+location - D:\namenode - 기본값 설치 
+
+OK가 나오면 화면클릭후 컨트롤 + 엔터 
+
+로그인 - 어플리케이션 - 시스템 도구 - 터미널 - SU / 비밀번호  
+
+VM - 세팅 - 옵션 - 공유폴더 - ALWAYS ENABLES - 브라우즈 - TEMP(공유폴더) 선택 - 마침
+
+터미널창에서 su / 비밀번호 - CD /mnt/hgfs - ls - temp가 나오면 잘된거(대소문자 구분) - cd temp - ls
+
+vi ~/.bashrc 
+
+alias cls='clear'
+alias sf='cd /mnt/hgfs/temp'
+alias loc='cd /usr/local'
+
+esc + 쉬프트 + 콜론 + wq!
+
+source ~/.bashrc 
+ls 
+
+tar xzvfp [tar file]
+ls
+
+mv [java~] /usr/local
+loc
+ls
+ln -s [jdk.8~]
+
+vi /etc/profile
+source /etc/profile
+
+export JAVA_HOME=/usr/local/java
+export PAHT=$JAVA_HOME/bin:$PATH
+
+
