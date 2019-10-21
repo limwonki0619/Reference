@@ -1,1 +1,3 @@
 BIZ-GIS 지오코딩(주소를 좌표로 변환) : http://www.biz-gis.com/index.php?mid=pds&document_srl=187250
+오픈소스 지리정보시스템 qgis 기초편 : https://books.google.co.kr/books?id=2oo8DwAAQBAJ&pg=PA142&lpg=PA142&dq=qgis+%EC%A0%80%EC%9E%A5%EB%B0%A9%EB%B2%95&source=bl&ots=vR7QzOociS&sig=ACfU3U1ioBvoH2vgkaC0D5ugbMKFSwTWAA&hl=ko&sa=X&ved=2ahUKEwjIkYO215vlAhUSC6YKHY0gB0M4FBDoATACegQICRAB#v=onepage&q=qgis%20%EC%A0%80%EC%9E%A5%EB%B0%A9%EB%B2%95&f=false
+QPackage 저장방법 https://borin78.tistory.com/11 
